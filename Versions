@@ -1,0 +1,92 @@
+!EarlyCollision
+V1.0E
+Working on A3000, A4000, and A5000
+Released on 23/6/96
+V1.1E  24/6/96
+Lower case letters now accepted as younger children
+not familier with upper case letters.
+V1.2E  26/6/96
+Limit on program length set at 90 lines to prevent
+array becoming out of range
+V1.3E  30/6/96
+Arrow leaving marks behind when turning now solved
+Limit of 9 characters per line on entry of commands
+V1.4E 4/7/96
+Does not display Warning screen if on an A3000
+V1.41E 7/7/96
+Bug fixed in handling of over-long lines and
+programs
+V1.42E 8/7/96
+Does not use RAM Disc if running on an A4000 or A5000 
+(hopefully on the network or harddisc) to prevent
+running out of memory
+Bug fixed in selecting which program to run
+depending on which computer it is being run on
+V1.5E 10/7/96
+Undo facility added
+
+!MiddleCollision
+V1.0
+Working on A3000, A4000, and A5000
+Released on 23/6/96
+V1.1M  26/6/96
+Limit on program length set at 90 lines to prevent
+array becoming out of range
+V1.2M  30/6/96
+Arrow leaving marks behind when turning now solved
+Limit of 9 characters per line on entry of commands
+V1.3M 8/7/96
+Editing now avaliable as in Upper Collision
+V1.31M 8/7/96
+Does not use RAM Disc if running on an A4000 or A5000 
+(hopefully on the network or harddisc) to prevent
+running out of memory
+Bug fixed in selecting which program to run
+depending on which computer it is being run on
+
+!UpperCollision
+V1.0
+Working on A3000, A4000, and A5000
+Released on 23/6/96
+V1.1  26/6/96
+Revised editing to enable longer programs and
+easier operation
+V1.2  26/6/96
+Limit on program length set at 90 lines to prevent
+array becoming out of range
+V1.21 30/6/96
+Run added to list when editing for easier use
+V1.3  30/6/96
+Arrow leaving marks behind when turning now solved
+Limit of 9 characters per line on entry of commands
+V1.4  8/7/96
+Does not use RAM Disc if running on an A4000 or A5000 
+(hopefully on the network or harddisc) to prevent
+running out of memory
+Bug fixed in selecting which program to run
+depending on which computer it is being run on
+
+Version 2 November 96
+Works on A3000,A4000 and A5000 from same code for
+all versions
+Totaly revamped front end including which screen to
+start from
+New screen renderer
+
+Version 3 April/May/June 97
+V3.00  8/6/97
+Totally new (multi-tasking) screen designer
+Totally re-written, configurable, multi-tasking 
+version
+V3.01 3/1/99
+Fixed bug in colour translation table for sprites
+that prevented the title screen being shown correctly
+(sometimes not at all) in screen modes with more than
+256 colours
+Added option to turn animation off in title (choose
+version) screen, as with textured window backgrounds
+the texture was lost where the sprite had been
+V3.02 11/1/99
+Rewrote handling of instructions so they could be
+changed when you edit a level, as previously they were
+a bit of a kludge, being hardwired into the code

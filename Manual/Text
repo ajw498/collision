@@ -1,0 +1,99 @@
+               Collision            Version 3.02
+               ~~~~~~~~~            ~~~~~~~~~~~~
+What is Collision?
+
+Collision is a program that can act as an introduction to LOGO graphics. You are presented with a screen with obstacles (shapes) on, and it is your task to guide the arrow from its starting place at the bottom of the screen to the target at the top of the screen, avoiding all the shapes. You must use commands such as F2 to go forward two units, and L90 to turn left ninety degrees.
+
+Collision is Freeware
+
+This means that you may freely pass on Collision to other people, provided you charge no more than a small fee to cover disc and postage costs.
+Collision is copyright © Alex Waugh.
+
+
+Running Collision
+
+To run Collision, double click on the !Collision icon in a filer window. If you have not yet registered, then you will get a warning window from which you may click on the Trial button to continue running Collision.
+You will then get to the title window. Here you can choose which level to use, or view the instructions for a particular level.
+
+Levels
+
+Collision can have up to five different levels - each representing a different level of difficulty. There are three supplied (Early, Middle and Upper), which you can modify or add to if you wish.
+Once you have chosen which level to use, you then get a choice of up to six screens. Choose the one you want to use, then the main window will open. The righthand part of the window contains the shapes you must avoid, and the lefthand edge is where you enter the instructions that you wish to give to move the arrow.
+The Clear button clears all of the current program that you have entered. The Run button runs your program from the start all the way to the end.
+On some levels the arrow will carry out each instruction as soon as you have pressed return after entering it. On other levels you must type the whole program before pressing the Run button.
+There are three commands:
+Forward - e.g. F5 moves the arrow forward 5 units
+Left - e.g. L90 turns the arrow left through ninety degrees
+Right - e.g. R45 turn the arrow right through forty five degrees
+On some levels the numbers are not needed, e.g. L would turn you left ninety degrees, this is configurable. All angles must be multiples of 45°.
+When you have completed a screen, you move onto the next one, unless the screen is the last in the level, in which case you are taken back to the title screen.
+That's about all there is to using Collision, and it should be quite easy to pick up.
+
+Configuring Collision
+
+Collision can be configured in many ways, so it is perhaps easiest to explain by going through the options in the configuration windows.
+If you click Menu over the Collision icon bar icon, then select Choices... from the menu, you get the following options.
+Colour - Click on the button to get a popup menu showing the colours available.
+CapsLock - Each level has a setting as to whether it needs uppercase, lowercase or mixed case letters for the instructions, and this section allows you to specify whether (and when) to turn on or off capslock depending on the levels settings.
+Versions
+Open choose level window will open the title screen to allow you to choose your level.
+Use default level will always start you off on the specified level.
+Display screen choice window allows you to choose which screen to start on.
+Always start on screen 1 will not give you a choice of which screen to start on.
+Show change level on menu will put a change level item on the menu you get when clicking menu over the main screen.
+Show change screen on menu and Show restart level on menu as above.
+Incorrect syntax causes an error - give an error if an instruction is not correct.
+Incorrect syntax is ignored - do not give an error if an instruction is wrong.
+Windows
+Open main window on startup - open the main window or title screen (whichever is configured) as soon as Collision is loaded.
+Open main window full screen - when the main window is opened, it is opened to it's full extent (filling the screen in a 640x480 mode)
+Don't use 3D templates - If you are using RISC OS 3 or greater then 3D templates are used by default, but this can force collision to use 2D templates.
+Give warning when closing unfinished screen - Give a message if you try to close a screen you have not completed.
+Animate title - Animate the title on the title screen.
+Some of the choices will take immediate effect, while others will not take effect until Collision is next loaded.
+
+Configuring a level
+
+If you select the Edit level... item from the iconbar menu, then you can change the setting associated with each level.
+The first thing to do is to click on the popup menu icon at the top of the Edit Level window, and choose the level that you want to edit, or enter a name for a new level at the bottom of the menu.
+CapsLock - These options control what, if any, case of letters is accepted as valid instructions.
+Move arrow after each instruction - If this is ticked then the arrow will carry out each instruction as soon as it is typed, if it is not, then the arrow will only move when you click on the Run button in the main screen. The three options below this refer to how the Run button is treated if the Move arrow after each instruction is ticked.
+Screens... - Click on this to open the screens window. This shows the six screens available for this level. To reorder the level, simply click on top of one of the screens and drag it to another position to swap it with the screen in the second position. To delete a screen the drag it to the dustbin icon. If you drag a screen to a filer window, then it will save the screen as a data file in the directory it was dragged to. If you drag a screen file from a directory to the screens window then it will be loaded into the position that it was dragged onto. If the screen designer program !Designer is loaded then double clicking on a screen in the screens window will load it into the designer.
+Syntax... - Opens the syntax window, which controls what are valid instructions, and how to interpret them.
+No number supplied after F expands to F1 - If you enter a forwards command but do not specify how many units to move forward then treat it as move forward one unit.
+No number supplied after F causes an error - give an error message if you enter a forwards command but do not specify how many units.
+Ignore any number supplied after F, always expand to F1 - treat all forwards commands as forwards one unit.
+Left and right are similar to forwards.
+Instructions... - Opens the instructions window. If you drag a plain text file (created using !Edit or another text editor) to this window to replace the instruction text show from the title screen.
+Delete will delete the current level, and Default will use a default set of choices.
+
+Preventing configuration
+
+If you wish to stop people fiddling with Collision's configuration, then shift double click on the !Collision icon in the filer window, then shift double click on the !Run file. Add the word -noconfig at the end of the last line (leaving a space between it and the previous text), then save the file.  Next time you run Collision, the Choices... and Edit level... menu items will be greyed out, and unaccessable. To re-enable configuration, simple remove the -noconfig text from the run file, and save it.
+
+Designing new screens
+
+To design a new screen or to edit an existing screen, you must use the !Designer program. Click on its iconbar icon to create a blank screen, or drag a Collision screen file onto the iconbar icon to edit an existing screen.
+To create a shape, select the orientation of triangle, or a rectangle by clicking on the relevant shape in the tool panel. Next, select which of the four colours you want, by clicking on the relevant colour icon in the tool panel. Finally, in the screen window drag out the size of the shape you want, and an outline will be drawn, then the shape will be created when you finish the drag.
+To move an existing shape, select the Move icon in the tool panel, then drag the shape you wish to move to its new position.
+To delete a shape, select the move tool, and drag the shape onto the top of the dustbin icon in the tool panel.
+To delete all the shapes on that screen, click menu over the screen window, then select the Delete all menu option. You will not be asked for confirmation.
+To save the screen, click menu over the screen window, then a standard save box is available from the Save menu option. This can be dragged to a filer window, or to the screens choices window in Collision.
+The colours used are those as configured in Collision, so if you create, say, a red triangle, it is not guaranteed to be red, as someone can change how each colour is interpreted by Collision.
+
+Contacting Me
+
+I welcome any bug reports, or suggestions for improvements to Collision.
+
+I can be contacted by email (for the next three years at least): ajw498@ecs.soton.ac.uk
+
+Or by snail mail:
+34 Winchester Ave
+Exwick
+Exeter
+Devon
+EX4 2DJ
+
+The latest version of Collision and my other software should be available from http://www.ecs.soton.ac.uk/~ajw498/
+
+© Alex Waugh  June 1999
