@@ -1,0 +1,7 @@
+Set Designer$Dir <Obey$Dir>
+IconSprites <Designer$Dir>.!Sprites
+RMEnsure WindowManager 3.17 RMEnsure BorderUtils 0 RMLoad System:Modules.BorderUtil
+RMEnsure WindowManager 3.17 RMEnsure BorderUtils 0 Error This program requires the BorderUtils module
+If "<Collision$Dir>"="" Then Error Screen Designer needs to have seen !Collision before it is run
+WimpSlot -Min 64k -Max 64k
+Run <Designer$Dir>.!RunImage
