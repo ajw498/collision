@@ -1,0 +1,13 @@
+                      !Collision, !Designer  ©Alex Waugh 1998
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The use of Collision should be fairly self explanatory. The screens are split into three levels, early, middle and upper.
+
+If you wish the Edit level... and Choices... menu items to be unselectable to prevent children fiddling, then shift double click on !Collision, then shift double click on the !Run file. Change the last line from
+Run <Collision$Dir>.!RunImage
+to
+Run <Collision$Dir>.!RunImage -noconfig
+
+!Designer
+
+To create a shape, select the colour you want to use, and the shape you want, then drag out its outline.
+To move a shape select the move icon and then drag the shape to where you want. To delete a shape, select the move icon the drag the shape to the bin icon.  To save a screen, click Menu over the screen window, move over Save, and either drag to a directory window or the Edit level -> screens window in Collision.
