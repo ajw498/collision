@@ -1,0 +1,15 @@
+Set A3000$Type 0
+RMEnsure UtilityModule 3.00 Set A3000$Type -1
+IF "<A3000$Type>"="-1" THEN *WIMPSLOT -MIN 416K -MAX 416K
+WIMPSLOT -MIN 64K -MAX 64K
+IF "<A3000$Type>"="-1" THEN *RMEnsure MemAlloc 0.11 RMRun <Obey$Dir>.MemAlloc
+IF "<A3000$Type>"="-1" THEN *RMEnsure MemAlloc 0.11 Error MemAlloc Module out of date or missing
+IF "<A3000$Type>"="-1" THEN *RAMFSSIZE 0K Error Unable to change RAMDisc size.  Is it empty?
+Echo Loading...
+Set COLLSAVE$dir ADFS::0.$.!SAVES
+Set COLLISION$dir <Obey$Dir>
+Set COLLPICS$Dir <Obey$Dir>
+Set COLLPICS2$Dir <Obey$Dir>
+
+IF "<A3000$Type>"="-1" THEN *RUN <COLLISION$DIR>.!RUNA3000 ELSE RUN <COLLISION$DIR>.!RUNIMAGE
+Unset A3000$Type
