@@ -1,0 +1,7 @@
+|> !Boot file for font directories
+|
+| (C) 1992 Computer Concepts
+|
+| Created by !FontInstall
+|
+IconSprites <Obey$Dir>.!Sprites

@@ -1,0 +1,6 @@
+Set Collision$Dir <Obey$Dir>
+IconSprites <Collision$Dir>.!Sprites
+RMEnsure WindowManager 3.17 RMEnsure BorderUtils 0 RMLoad System:Modules.BorderUtil
+RMEnsure WindowManager 3.17 RMEnsure BorderUtils 0 Error This program requires the BorderUtils module
+WimpSlot -Min 160k -Max 160k   
+Run <Collision$Dir>.!RunImage
