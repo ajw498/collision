@@ -1,0 +1,3 @@
+WimpSlot -Min 192K -Max 192K
+Set Collision$Dir <Obey$Dir>
+Run <Collision$Dir>.!RunImage

@@ -1,0 +1,30 @@
+This is Edit, version 1.00 (20-Dec-88)
+
+Documentation on how to use Edit can be found in Edition 2 of the Archimedes
+User Guide.
+
+The following remarks should be noted about this version of Edit and its
+documentation.
+
+The TAB key can be used to move the caret along the line to the column
+position that matches the start of the next word boundary on the line above,
+provided that the 'line above' is not wrapped.
+
+When forming a selection using the SELECT and ADJUST mouse keys, if CTRL is
+held down, the caret will not be moved. This makes it easier to copy a block
+of text to where the caret already is: hold down CTRL, make the selection,
+type C, release CTRL.
+
+ADJUST on the close box of an Edit window will close the window (if the
+window is not modified) and open the parent directory viewer. This should be
+thought of as similar to ADJUST on the close box of a directory viewer.
+
+The vertical scroll bar indicates the fraction of the file currently visible
+as a fraction of the total number of characters, rather than as a fraction of
+the number of lines.  This means that the length of the vertical scroll bar
+will vary dependent upon the number of characters in the window.
+
+If a desktop closedown sequence (e.g. Exit from the Task manager menu)
+occurs when Edit has some modified buffers, Edit sometimes erroneously
+terminates the desktop closedown sequence. It is of course normal practice
+to save your work before trying to exit the desktop.

@@ -1,0 +1,20 @@
+Can you draw a line from the white square at the bottom to the pale blue
+one at the top without hitting the coloured shapes?
+
+To draw the line you must tell the arrow how to move.
+
+Type F1 for forward 1 dot, (F2=forward 2 dots etc.)
+
+To turn a right angled corner type R or L.
+
+F is followed by a number.
+
+After each order press RETURN to start a new order.
+
+Type RUN (and RETURN) when you want the arrow to start.
+
+You may edit your program if it didn't work.  Select the line you want to
+change, then press delete and enter your new instruction (and then RETURN).
+
+
+                     Press any key to continue      

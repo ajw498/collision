@@ -1,0 +1,18 @@
+Can you draw a line from the white square at the bottom to the pale blue
+one at the top without hitting the coloured shapes?
+
+To draw the line you must tell the arrow how to move.
+
+Type f1 for forward 1 dot, (f2=forward 2 dots etc.)
+
+To turn a corner type l for left and r for right.
+
+After each order press RETURN to start a new order.
+
+You can try again if you crash into a shape or do not hit the target.
+
+If you made a mistake and did not crash then you can type undo (and RETURN)
+and the arrow will undo the last move you made.
+
+
+                     Press any key to continue      

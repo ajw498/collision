@@ -1,0 +1,12 @@
+|> !Run file for font directories
+|
+| (C) 1992 Computer Concepts
+|
+| Created by !FontInstall
+|
+IconSprites <Obey$Dir>.!Sprites
+|
+RMEnsure FontManager 2.42 RMLoad <Obey$Dir>.Fonts
+RMEnsure SuperSample 0.06 RMLoad <Obey$Dir>.Super
+|
+%Run <Obey$Dir>.WMessage "Adding fonts" -Run "<Obey$Dir>.FInstall <Obey$Dir>." -Pause
